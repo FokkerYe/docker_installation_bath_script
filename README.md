@@ -1,5 +1,5 @@
 # docker_installation_bath_scripts
-
+```
 #!/bin/bash
 
 # Update the package index
