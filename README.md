@@ -1,9 +1,5 @@
 # docker_installation_bath_scripts
-step-1. you need to create bash file --eg. docker_installation.sh
-step-2.--------change permission ------eg. chmod+x docker_installation.sh
-step-3.-------eg.  docker_installation.sh
 
-```
 #!/bin/bash
 
 # Update the package index
