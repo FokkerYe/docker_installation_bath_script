@@ -1,3 +1,4 @@
+#I use this script for Ubuntu 22-04 server it is fine.
 ```
 nano install_docker.sh
 
