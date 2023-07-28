@@ -1,5 +1,12 @@
+```
+nano install_docker.sh
+
+```
+
 # docker_installation_bath_scripts
 ```
+
+
 #!/bin/bash
 
 # Update the package index
@@ -42,4 +49,8 @@ sudo systemctl enable docker
 
 # Test Docker installation by running the hello-world container
 sudo docker run hello-world
+```
+```
+chmod +x install_docker.sh
+sudo ./install_docker.sh
 ```
