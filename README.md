@@ -55,3 +55,18 @@ sudo docker run hello-world
 chmod +x install_docker.sh
 sudo ./install_docker.sh
 ```
+```
+ayk@ubuntu-server-22-04:~$ docker images
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/images/json": dial unix /var/run/docker.sock: connect: permission denied
+ayk@ubuntu-server-22-04:~$ ls -l /var/run/docker.sock
+srw-rw---- 1 root docker 0 May 21 13:55 /var/run/docker.sock
+ayk@ubuntu-server-22-04:~$ sudo chmod 666 /var/run/docker.sock
+[sudo] password for ayk:
+ayk@ubuntu-server-22-04:~$ ls -l /var/run/docker.sock
+srw-rw-rw- 1 root docker 0 May 21 13:55 /var/run/docker.sock
+ayk@ubuntu-server-22-04:~$ docker images
+REPOSITORY    TAG       IMAGE ID       CREATED         SIZE
+hello-world   latest    d2c94e258dcb   12 months ago   13.3kB
+ayk@ubuntu-server-22-04:~$
+
+```
