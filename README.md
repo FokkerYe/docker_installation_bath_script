@@ -67,6 +67,9 @@ srw-rw-rw- 1 root docker 0 May 21 13:55 /var/run/docker.sock
 ayk@ubuntu-server-22-04:~$ docker images
 REPOSITORY    TAG       IMAGE ID       CREATED         SIZE
 hello-world   latest    d2c94e258dcb   12 months ago   13.3kB
+dockerlab@dockerlab:~$ sudo usermod -aG docker $USER
+dockerlab@dockerlab:~$ newgrp docker
+
 ayk@ubuntu-server-22-04:~$
 
 ```
